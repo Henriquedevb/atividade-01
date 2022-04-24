@@ -25,51 +25,45 @@
       <ion-content color="secondary">
         <ion-header>
           <ion-toolbar color="primary">
-            <ion-title class="ion-padding">TODO</ion-title>
+            <ion-title class="ion-padding">Make your registration</ion-title>
           </ion-toolbar>
         </ion-header>
 
-        <ion-item class="ion-padding">
-          <ion-grid fixed>
-            <ion-row>
-              <ion-col size="6">
-                <ion-input type="text" placeholder="Adicione seu TODO" />
-              </ion-col>
-              <ion-col size="6"
-                ><ion-button
-                  i-item-s
-                  (click)="onClick()"
-                  expand="block"
-                  fill="clear"
-                  shape="round"
-                  class="ion-float-right"
+        <ion-grid style="height: calc(100vh - 90px)">
+          <ion-row class="ion-align-items-center" style="height: 100%">
+            <ion-col class="ion-text-center">
+              <ion-item>
+                <ion-label position="center" color="medium">Name</ion-label>
+                <ion-input type="text"></ion-input>
+              </ion-item>
+              <br>
+              <ion-item>
+                <ion-label position="center" color="medium">Last Name</ion-label>
+                <ion-input type="text"></ion-input>
+              </ion-item>
+              <br>
+              <ion-item>
+                <ion-label position="center" color="medium">E-mail</ion-label>
+                <ion-input type="email"></ion-input>
+              </ion-item>
+                <br>
+              <ion-item class="ion-margin-bottom">
+                <ion-label position="center" color="medium">Password</ion-label>
+                <ion-input type="password"></ion-input>
+              </ion-item>
+              
+              <div class="ion-padding-top">
+                <ion-button color="primary" expand="block" href="./todo.html" color="light"
+                  >Send</ion-button
                 >
-                  Adicionar
-                </ion-button></ion-col
-              >
-            </ion-row>
-          </ion-grid>
-        </ion-item>
-
-        <ion-item class="ion-padding">
-          <ion-label>Meu todo</ion-label>
-        </ion-item>
-        <ion-item class="ion-padding">
-          <ion-label>Meu todo</ion-label>
-        </ion-item>
-        <ion-item class="ion-padding">
-          <ion-label>Meu todo</ion-label>
-        </ion-item>
-        <ion-item class="ion-padding">
-          <ion-label>Meu todo</ion-label>
-        </ion-item>
-      </ion-content>
+              </div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
 
       <ion-footer>
         <ion-toolbar color="primary">
-          <ion-title class="ion-text-center"
-            >Feito por Henrique Fontenele</ion-title
-          >
+          <ion-title class="ion-text-center">Feito por Fontenele</ion-title>
         </ion-toolbar>
       </ion-footer>
     </ion-app>
